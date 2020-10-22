@@ -11,19 +11,25 @@
 		FCC0FE2B2540043300673F7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0FE2A2540043300673F7E /* SceneDelegate.swift */; };
 		FCC0FE2D2540043300673F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0FE2C2540043300673F7E /* ViewController.swift */; };
 		FCC0FE302540043300673F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC0FE2E2540043300673F7E /* Main.storyboard */; };
-		FCC0FE322540043600673F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC0FE312540043600673F7E /* Assets.xcassets */; };
 		FCC0FE352540043600673F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC0FE332540043600673F7E /* LaunchScreen.storyboard */; };
+		FCC0FE3D25404CA800673F7E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0FE3C25404CA800673F7E /* ResultViewController.swift */; };
+		FCC0FE6C2541331A00673F7E /* IMG_7718.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FCC0FE662541331A00673F7E /* IMG_7718.jpeg */; };
+		FCC0FE6D2541331A00673F7E /* IMG_7716.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FCC0FE672541331A00673F7E /* IMG_7716.jpeg */; };
+		FCC0FE6E2541331A00673F7E /* IMG_7715.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FCC0FE682541331A00673F7E /* IMG_7715.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FCC0FE252540043300673F7E /* PhotoApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC0FE252540043300673F7E /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC0FE282540043300673F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCC0FE2A2540043300673F7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FCC0FE2C2540043300673F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCC0FE2F2540043300673F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FCC0FE312540043600673F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCC0FE342540043600673F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCC0FE362540043600673F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC0FE3C25404CA800673F7E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FCC0FE662541331A00673F7E /* IMG_7718.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_7718.jpeg; sourceTree = "<group>"; };
+		FCC0FE672541331A00673F7E /* IMG_7716.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_7716.jpeg; sourceTree = "<group>"; };
+		FCC0FE682541331A00673F7E /* IMG_7715.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_7715.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +48,16 @@
 			children = (
 				FCC0FE272540043300673F7E /* PhotoApp2 */,
 				FCC0FE262540043300673F7E /* Products */,
+				FCC0FE682541331A00673F7E /* IMG_7715.jpeg */,
+				FCC0FE672541331A00673F7E /* IMG_7716.jpeg */,
+				FCC0FE662541331A00673F7E /* IMG_7718.jpeg */,
 			);
 			sourceTree = "<group>";
 		};
 		FCC0FE262540043300673F7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCC0FE252540043300673F7E /* PhotoApp2.app */,
+				FCC0FE252540043300673F7E /* SlideshowApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,8 +68,8 @@
 				FCC0FE282540043300673F7E /* AppDelegate.swift */,
 				FCC0FE2A2540043300673F7E /* SceneDelegate.swift */,
 				FCC0FE2C2540043300673F7E /* ViewController.swift */,
+				FCC0FE3C25404CA800673F7E /* ResultViewController.swift */,
 				FCC0FE2E2540043300673F7E /* Main.storyboard */,
-				FCC0FE312540043600673F7E /* Assets.xcassets */,
 				FCC0FE332540043600673F7E /* LaunchScreen.storyboard */,
 				FCC0FE362540043600673F7E /* Info.plist */,
 			);
@@ -70,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCC0FE242540043300673F7E /* PhotoApp2 */ = {
+		FCC0FE242540043300673F7E /* SlideshowApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCC0FE392540043600673F7E /* Build configuration list for PBXNativeTarget "PhotoApp2" */;
+			buildConfigurationList = FCC0FE392540043600673F7E /* Build configuration list for PBXNativeTarget "SlideshowApp" */;
 			buildPhases = (
 				FCC0FE212540043300673F7E /* Sources */,
 				FCC0FE222540043300673F7E /* Frameworks */,
@@ -82,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = PhotoApp2;
+			name = SlideshowApp;
 			productName = PhotoApp2;
-			productReference = FCC0FE252540043300673F7E /* PhotoApp2.app */;
+			productReference = FCC0FE252540043300673F7E /* SlideshowApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FCC0FE202540043300673F7E /* Build configuration list for PBXProject "PhotoApp2" */;
+			buildConfigurationList = FCC0FE202540043300673F7E /* Build configuration list for PBXProject "SlideshowApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCC0FE242540043300673F7E /* PhotoApp2 */,
+				FCC0FE242540043300673F7E /* SlideshowApp */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +134,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC0FE6C2541331A00673F7E /* IMG_7718.jpeg in Resources */,
+				FCC0FE6D2541331A00673F7E /* IMG_7716.jpeg in Resources */,
 				FCC0FE352540043600673F7E /* LaunchScreen.storyboard in Resources */,
-				FCC0FE322540043600673F7E /* Assets.xcassets in Resources */,
 				FCC0FE302540043300673F7E /* Main.storyboard in Resources */,
+				FCC0FE6E2541331A00673F7E /* IMG_7715.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +152,7 @@
 				FCC0FE2D2540043300673F7E /* ViewController.swift in Sources */,
 				FCC0FE292540043300673F7E /* AppDelegate.swift in Sources */,
 				FCC0FE2B2540043300673F7E /* SceneDelegate.swift in Sources */,
+				FCC0FE3D25404CA800673F7E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tecacademy.sonoka.yashiro.PhotoApp2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SlideshowApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tecacademy.sonoka.yashiro.PhotoApp2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SlideshowApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCC0FE202540043300673F7E /* Build configuration list for PBXProject "PhotoApp2" */ = {
+		FCC0FE202540043300673F7E /* Build configuration list for PBXProject "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCC0FE372540043600673F7E /* Debug */,
@@ -326,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCC0FE392540043600673F7E /* Build configuration list for PBXNativeTarget "PhotoApp2" */ = {
+		FCC0FE392540043600673F7E /* Build configuration list for PBXNativeTarget "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCC0FE3A2540043600673F7E /* Debug */,
