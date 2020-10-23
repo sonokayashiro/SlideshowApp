@@ -11,13 +11,13 @@ import UIKit
 class ResultViewController: UIViewController {
     @IBOutlet weak var resultimageboard: UIImageView!
     
-    let img : [UIImage] = [UIImage(named: "IMG_7715.jpeg")!, UIImage(named:"IMG_7716.jpeg")!, UIImage(named:"IMG_7718.jpeg")!]
-    var X : Int = 0
+    let images : [UIImage] = [UIImage(named: "IMG_7715.jpeg")!, UIImage(named:"IMG_7716.jpeg")!, UIImage(named:"IMG_7718.jpeg")!]
+    var index : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resultimageboard.image = img[X]
+        resultimageboard.image = images[index]
 
         // Do any additional setup after loading the view.
     }

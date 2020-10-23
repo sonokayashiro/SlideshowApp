@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC18BA8C25425C5A00583216 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC18BA8B25425C5A00583216 /* Default-568h@2x.png */; };
 		FCC0FE292540043300673F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0FE282540043300673F7E /* AppDelegate.swift */; };
 		FCC0FE2B2540043300673F7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0FE2A2540043300673F7E /* SceneDelegate.swift */; };
 		FCC0FE2D2540043300673F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0FE2C2540043300673F7E /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC18BA8B25425C5A00583216 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FCC0FE252540043300673F7E /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC0FE282540043300673F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCC0FE2A2540043300673F7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +48,8 @@
 		FCC0FE1C2540043300673F7E = {
 			isa = PBXGroup;
 			children = (
-				FCC0FE272540043300673F7E /* PhotoApp2 */,
+				FC18BA8B25425C5A00583216 /* Default-568h@2x.png */,
+				FCC0FE272540043300673F7E /* SlideshowApp */,
 				FCC0FE262540043300673F7E /* Products */,
 				FCC0FE682541331A00673F7E /* IMG_7715.jpeg */,
 				FCC0FE672541331A00673F7E /* IMG_7716.jpeg */,
@@ -62,7 +65,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCC0FE272540043300673F7E /* PhotoApp2 */ = {
+		FCC0FE272540043300673F7E /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
 				FCC0FE282540043300673F7E /* AppDelegate.swift */,
@@ -73,7 +76,7 @@
 				FCC0FE332540043600673F7E /* LaunchScreen.storyboard */,
 				FCC0FE362540043600673F7E /* Info.plist */,
 			);
-			path = PhotoApp2;
+			path = SlideshowApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +142,7 @@
 				FCC0FE352540043600673F7E /* LaunchScreen.storyboard in Resources */,
 				FCC0FE302540043300673F7E /* Main.storyboard in Resources */,
 				FCC0FE6E2541331A00673F7E /* IMG_7715.jpeg in Resources */,
+				FC18BA8C25425C5A00583216 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhotoApp2/Info.plist;
+				INFOPLIST_FILE = SlideshowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhotoApp2/Info.plist;
+				INFOPLIST_FILE = SlideshowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

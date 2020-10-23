@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let img : [UIImage] = [UIImage(named: "IMG_7715.jpeg")!, UIImage(named:"IMG_7716.jpeg")!, UIImage(named:"IMG_7718.jpeg")!]
-    var X : Int = 0
+    let images : [UIImage] = [UIImage(named: "IMG_7715.jpeg")!, UIImage(named:"IMG_7716.jpeg")!, UIImage(named:"IMG_7718.jpeg")!]
+    var index : Int = 0
     var timer: Timer!
     
     @IBOutlet weak var imageboard: UIImageView!
@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     //画像をタップしたときの処理
     @IBAction func tap(_ sender: Any) {
         performSegue(withIdentifier: "enlargedimage", sender: nil)
+        if (timer != nil){
+            timer.invalidate()
+            
+        }
     }
     //画像をタップしてデータを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,27 +29,27 @@ class ViewController: UIViewController {
         let resultviewcontroller : ResultViewController = segue.destination as! ResultViewController
         
         // 遷移先のResultViewControllerで宣言しているXに値を代入
-        resultviewcontroller.X = X
+        resultviewcontroller.index = index
     }
     
     //backボタンを押したときの処理
     @IBOutlet weak var backbutton: UIButton!
     @IBAction func back(_ sender: Any) {
-        X -= 1
-        if X == -1{
-            X = 2
+        index -= 1
+        if index == -1{
+            index = 2
         }
-        imageboard.image = img[X]
+        imageboard.image = images[index]
     }
 
     //nextボタンを押したときの処理
     @IBOutlet weak var nextbutton: UIButton!
     @IBAction func next(_ sender: Any) {
-        X += 1
-        if X == 3{
-         X = 0
+        index += 1
+        if index == 3{
+         index = 0
         }
-        imageboard.image = img[X]
+        imageboard.image = images[index]
     }
     
     //startstopボタンを押したときの処理
@@ -66,16 +70,18 @@ class ViewController: UIViewController {
         }
     }
     @objc func changeimage (){
-        X += 1
-        if X == 3{
-            X = 0
+        index += 1
+        if index == 3{
+            index = 0
         }
-        imageboard.image = img[X]
+        imageboard.image = images[index]
     }
     
     // 他の画面から segue を使って戻ってきた時に呼ばれる
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        startstopbutton.setTitle("再生", for: .normal)
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
