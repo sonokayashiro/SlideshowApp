@@ -18,10 +18,12 @@ class ViewController: UIViewController {
     //画像をタップしたときの処理
     @IBAction func tap(_ sender: Any) {
         performSegue(withIdentifier: "enlargedimage", sender: nil)
-        if (timer != nil){
+        if timer != nil{
             timer.invalidate()
-            
+            timer = nil
         }
+        
+    
     }
     //画像をタップしてデータを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -80,6 +82,9 @@ class ViewController: UIViewController {
     // 他の画面から segue を使って戻ってきた時に呼ばれる
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
         startstopbutton.setTitle("再生", for: .normal)
+        nextbutton.isEnabled = true
+        backbutton.isEnabled = true
+        
     }
     
 
